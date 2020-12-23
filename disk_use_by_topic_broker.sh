@@ -22,7 +22,7 @@ fi
 
 for ((b=1; b<=$2; b++))
 do
-	echo "==Broker $b disk usage per topic=="
+	printf "\n%s\n" "==Broker $b disk usage per topic=="
 	printf "%20s\t%s\n" "Topic" "Size (in bytes)"
 	for i in $(eval "$getKafkaTopic_command")
 	do
